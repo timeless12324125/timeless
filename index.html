@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Дія</title>
+	<style>
+body{
+	margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&family=Josefin+Sans:ital,wght@1,300&family=Lobster&display=swap');
+
+.block{
+	width: 390px;
+	height: 867px;
+	background-color: #B0C4DE;
+}
+.dia_mother{
+	position: relative;
+	top: 47px;
+	left: 20px;
+	display: flex;
+	width: 980px;
+	height: 100px;
+	flex-direction: row;
+}
+.dia{
+	width: 40px;
+	height: 40px;
+	border-radius: 23%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+}
+.text_dia{
+	position: relative;
+	bottom: 7px;
+}
+.QR{
+	text-align: right;
+	margin-right: 20px;
+}
+.qr{
+	position: relative;
+	top: -69px;
+	width: 30px;
+	height: 30px;
+}
+.data{
+	position: relative;
+	top: -17px;
+	text-align: center;
+	color: black;
+}
+.point{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+  top: 20px;
+	left: 175px;
+	text-align: center;
+}
+.circle1{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: black;
+}
+.circle2, .circle3{
+	width: 7.5px;
+	height: 7.5px;
+	border-radius: 50%;
+	background-color: grey;
+	margin-left: 5px;
+}
+ .circle4{
+	width: 6.5px;
+	height: 6.5px;
+	border-radius: 50%;
+	background-color: grey;
+	margin-left: 5px;
+	margin-top: 0;
+}
+.menu{
+	position: relative;
+	text-align: center;
+  top: 60px;
+}
+.menu_img{
+	width: 385px;
+	height: 45px;
+}
+.near-block{
+	width: 15px;
+	height: 440px;
+	border-radius: 5px 0px 0px 5px;
+	background-color: #d7e3f3;
+	position: absolute;
+	top: 16px;
+	left: 92%;
+}
+.dd{
+        font-family: 'Andika', sans-serif;
+        top: -20px;
+        position: absolute;
+        left: 70px;
+}
+
+
+
+      .slider {
+      width: 450px;
+      height: 520px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      left: 30px;
+      top: -20px;
+      }
+      .slides {
+      display: flex;
+      width: 400px;
+      height: 550px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      align-items: center;
+      text-align: center;
+      }
+      
+      .slides > div {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 354px;
+      height: 440px;
+      margin-right: 18px;
+      align-items: center;
+      border-radius: 10px;
+      transform-origin: center center;
+      transform: scale(1);
+      transition: transform 5s;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      top: 0px;
+      }
+      .img{
+        width: 324px;
+        height: 420px;
+        border-radius: 2%;
+        left: -2px;
+        top: -30px;
+
+      }      
+      .img:first-child{
+        height: 428px;
+      }
+      .slider > a {
+      display: inline-flex;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: white;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 0 0.5rem 0;
+      position: relative;
+      }
+
+      html, body {
+      height: 100%;
+      overflow: hidden;
+      }
+.div1{
+  position: relative;
+  left: -364.5px;
+}
+.div2{
+  position: relative;
+  left: -728.5px;
+}
+.div3{
+  position: relative;
+  left: -1093px;
+}
+.div4{
+  position: relative;
+  left: -1092.5px;
+}
+.img1{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.img2{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.img3{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.img4{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.div02{
+  position: relative;
+  left: -364px;
+}
+.div03{
+  position: relative;
+  left: -728px;
+}
+.img01{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(180deg);
+  position: absolute;
+  display: block;
+  
+}
+.img02{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(180deg);
+  position: absolute;
+  display: block;
+
+}
+.img03{
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(180deg);
+  position: absolute;
+  display: block;
+}
+.img{
+	box-shadow: 0px 28px 18px -11px rgba(98, 121, 139, 0.6);
+}
+	</style>
+</head>
+<body>
+	<div class="block">
+		<div class="dia_mother">
+			<div class="dia">
+			<img src="dii.png" class="dia">
+			</div>
+		</div>
+		<div class="QR">
+				<img class="qr" src="qr.jpg">
+			</div>
+		<div disabled=disabled class="slider">
+		    <div disabled=disabled class="slides">
+		        <div id="div-01" disabled=disabled class="div01" ><img disabled=disabled class="img img01" id="slide-01" onclick="revers01()" class="dia_photo2" src="dia2.jpg"></div>
+		        <div id="div-1" class="div1" disabled=disabled onclick="regular1(), revers1()"><img disabled=disabled class="img img1" id="slide-1" src="dia.jpg"></div>
+		        
+		        <div id="div-02" disabled=disabled class="div02"><img disabled=disabled class="img img02" id="slide-02" onclick="revers02()" class="dia_photo2" src="dia2.jpg"></div>
+		        <div id="div-2" class="div2" disabled=disabled onclick="regular2(), revers2()"><img disabled=disabled class="img img2" id="slide-2" src="dia3.jpg"></div>
+
+		        <div id="div-03" disabled=disabled class="div03"><img disabled=disabled class="img img03" id="slide-03" onclick="revers03()" class="dia_photo2" src="dia2.jpg"></div>
+		        <div id="div-3" disabled=disable class="div3" onclick="regular3(), revers3()"><img disabled=disabled class="img img3" id="slide-3" src="dia4.jpg"></div>
+
+		        <div class="div4" disabled=disabled onclick="regular4()"><img disabled=disabled class="img img4" id="slide-4" src="dia5.png"></div>
+		    </div>
+    	</div>
+		<div class="data">
+                     <h4 id = 'dd' class="dd">Дані оновлено  </h4>
+		</div>
+		<div class="point">
+			<div id = "circle1" class="circle1"></div>
+			<div id = "circle2" class="circle2"></div>
+			<div id = "circle3" class="circle3"></div>
+			<div id = "circle4" class="circle4"></div>
+		</div>
+		<div class="menu">
+			<img class="menu_img" src="menu.jpg">
+		</div>
+	</div>
+</body>
+<script>
+	function zero_first_format(value)
+    {
+        if (value < 10)
+        {
+            value='0'+value;
+        }
+        return value;
+    }
+
+    /* функция получения текущей даты и времени */
+    function date_time()
+    {
+        var current_datetime = new Date();
+        var day = zero_first_format(current_datetime.getDate());
+        var month = zero_first_format(current_datetime.getMonth()+1);
+        var year = current_datetime.getFullYear();
+        var hours = zero_first_format(current_datetime.getHours());
+        var minutes = zero_first_format(current_datetime.getMinutes());
+        var seconds = zero_first_format(current_datetime.getSeconds());
+
+        return day+"."+month+"."+year+" "+hours+":"+minutes;
+    }
+
+    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+    document.getElementById('dd').innerHTML += date_time();
+
+
+
+    function regular1() {
+      document.getElementById('slide-1').style.height = '478px';
+      document.getElementById('slide-2').style.height = '440px';
+      document.getElementById('slide-3').style.height = '440px';
+      document.getElementById('slide-4').style.height = '440px';
+      document.getElementById('slide-01').style.height = '478px';
+      document.getElementById('slide-02').style.height = '440px';
+      document.getElementById('slide-03').style.height = '440px';
+      document.getElementById('circle1').style.height = '8px';
+      document.getElementById('circle2').style.height = '7.5px';
+      document.getElementById('circle3').style.height = '7.5px';
+      document.getElementById('circle4').style.height = '6.5px';
+      document.getElementById('circle1').style.width = '8px';
+      document.getElementById('circle2').style.width = '7.5px';
+      document.getElementById('circle3').style.width = '7.5px';
+      document.getElementById('circle4').style.width = '6.5px';
+      document.getElementById('circle1').style.background = 'black';
+      document.getElementById('circle2').style.background = 'grey';
+      document.getElementById('circle3').style.background = 'grey';
+      document.getElementById('circle4').style.background = 'grey';
+
+    }
+    function regular2() {
+      document.getElementById('slide-2').style.height = '478px';
+      document.getElementById('slide-3').style.height = '440px';
+      document.getElementById('slide-1').style.height = '440px';
+      document.getElementById('slide-4').style.height = '440px';
+      document.getElementById('slide-02').style.height = '478px';
+      document.getElementById('slide-01').style.height = '440px';
+      document.getElementById('slide-03').style.height = '440px';
+      document.getElementById('circle1').style.height = '7.5px';
+      document.getElementById('circle2').style.height = '8px';
+      document.getElementById('circle3').style.height = '7.5px';
+      document.getElementById('circle4').style.height = '6.5px';
+      document.getElementById('circle1').style.width = '7.5px';
+      document.getElementById('circle2').style.width = '8px';
+      document.getElementById('circle3').style.width = '7.5px';
+      document.getElementById('circle4').style.width = '6.5px';
+      document.getElementById('circle2').style.background = 'black';
+      document.getElementById('circle1').style.background = 'grey';
+      document.getElementById('circle3').style.background = 'grey';
+      document.getElementById('circle4').style.background = 'grey';
+    }
+    function regular3() {
+      document.getElementById('slide-3').style.height = '478px';
+      document.getElementById('slide-4').style.height = '440px';
+      document.getElementById('slide-1').style.height = '440px';
+      document.getElementById('slide-2').style.height = '440px';
+      document.getElementById('slide-03').style.height = '478px';
+      document.getElementById('slide-02').style.height = '440px';
+      document.getElementById('slide-01').style.height = '440px';
+      document.getElementById('circle1').style.height = '6.5px';
+      document.getElementById('circle2').style.height = '7.5px';
+      document.getElementById('circle3').style.height = '8px';
+      document.getElementById('circle4').style.height = '7.5px';
+      document.getElementById('circle1').style.width = '6.5px';
+      document.getElementById('circle2').style.width = '7.5px';
+      document.getElementById('circle3').style.width = '8px';
+      document.getElementById('circle4').style.width = '7.5px';
+      document.getElementById('circle3').style.background = 'black';
+      document.getElementById('circle2').style.background = 'grey';
+      document.getElementById('circle4').style.background = 'grey';
+      document.getElementById('circle1').style.background = 'grey';
+    }
+    function regular4() {
+      document.getElementById('slide-4').style.height = '478px';
+      document.getElementById('slide-3').style.height = '440px';
+      document.getElementById('slide-2').style.height = '440px';
+      document.getElementById('slide-1').style.height = '440px';
+      document.getElementById('slide-01').style.height = '440px';
+      document.getElementById('slide-02').style.height = '440px';
+      document.getElementById('slide-03').style.height = '440px';
+      document.getElementById('circle1').style.height = '6.5px';
+      document.getElementById('circle2').style.height = '7.5px';
+      document.getElementById('circle3').style.height = '7.5px';
+      document.getElementById('circle4').style.height = '8px';
+      document.getElementById('circle1').style.width = '6.5px';
+      document.getElementById('circle2').style.width = '7.5px';
+      document.getElementById('circle3').style.width = '7.5px';
+      document.getElementById('circle4').style.width = '8px';
+      document.getElementById('circle4').style.background = 'black';
+      document.getElementById('circle3').style.background = 'grey';
+      document.getElementById('circle1').style.background = 'grey';
+      document.getElementById('circle2').style.background = 'grey';
+    }
+
+
+    function revers1() {
+    document.getElementById('slide-1').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-01').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-1').style.zIndex = '1';
+    document.getElementById('div-01').style.zIndex = '2';
+    }
+    function revers01() {
+    document.getElementById('slide-01').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-1').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-1').style.zIndex = '2';
+    document.getElementById('div-01').style.zIndex = '1';
+    }
+    function revers2() {
+    document.getElementById('slide-2').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-02').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-2').style.zIndex = '1';
+    document.getElementById('div-02').style.zIndex = '2';
+    }
+    function revers02() {
+    document.getElementById('slide-02').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-2').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-2').style.zIndex = '2';
+    document.getElementById('div-02').style.zIndex = '1';
+    }
+    function revers3() {
+    document.getElementById('slide-3').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-03').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-3').style.zIndex = '1';
+    document.getElementById('div-03').style.zIndex = '2';
+    }
+    function revers03() {
+    document.getElementById('slide-03').style.transform = 'rotateY(180deg)';
+    document.getElementById('slide-3').style.transform = 'rotateY(360deg)';
+    document.getElementById('div-3').style.zIndex = '2';
+    document.getElementById('div-03').style.zIndex = '1';
+    }
+</script>
+</html>
